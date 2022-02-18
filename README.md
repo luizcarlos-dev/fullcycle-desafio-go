@@ -1,5 +1,4 @@
-# fullcycle-desafio-go
-Desagio Fullcycle GO!
+# Desagio Fullcycle GO!
 
 
 Caminho da imagem: **luizcarlos100/desafio-go**
