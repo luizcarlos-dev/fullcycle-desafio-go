@@ -1,9 +1,10 @@
+--------------------------------------------------------
 Esse desafio é muito empolgante principalmente se você nunca trabalhou com a linguagem Go!
 Você terá que publicar uma imagem no docker hub. Quando executarmos:
 
 docker run <seu-user>/codeeducation
 
-Temos que ter o seguinte resultado: Code.education Rocks!
+Temos que ter o seguinte resultado: FyllCycle Rocks
 
 Se você perceber, essa imagem apenas realiza um print da mensagem como resultado final, logo, vale a pena dar uma conferida no próprio site da Go Lang para aprender como fazer um "olá mundo".
 
@@ -14,10 +15,11 @@ Lembrando que a Go Lang possui imagens oficiais prontas, vale a pena consultar o
 Dica: No vídeo de introdução sobre o Docker quando falamos sobre o sistema de arquivos em camadas, apresento uma imagem "raiz", talvez seja uma boa utilizá-la.
 
 Divirta-se
+--------------------------------------------------------
 
 
---------------------
-Desafio 1:
+--------------------------------------------------------
+Desafio:
 - Construir imagem GO
 - Ao acessar o container printar: FyllCycle Rocks
 - Tamanho máximo imagem: 2m
@@ -25,16 +27,18 @@ Desafio 1:
 - Entregar fonte Desafio no GIT
 - Desafio GO deve fazer o push da imagem no DockerHub
 - Criar um Readme no repositório informando o caminho da imagem Go
+--------------------------------------------------------
 
 
---------------
+--------------------------------------------------------
 COMANDOS:
 
 #Gerando imagem da aplicação
 #Dockerfile
 >docker build -t luizcarlos100/desafio-go:latest .
 >docker image ls luizcarlos100/desafio-go
->docker run -it --rm --name desafio-go luizcarlos100/desafio-go:latest
+>docker run --rm luizcarlos100/desafio-go:latest
 >docker run luizcarlos100/desafio-go
 >docker rmi luizcarlos100/desafio-go -f
 >docker push luizcarlos100/desafio-go:latest
+--------------------------------------------------------
